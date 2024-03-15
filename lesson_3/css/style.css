@@ -1,0 +1,90 @@
+@import url("reset.css");
+
+/* HEADER */
+
+.header {
+	color: blueviolet;
+}
+
+.big-title {
+	color: blue;
+}
+
+.block-definition {
+	color: violet;
+}
+
+mark {
+	color: teal;
+}
+
+.definition-section > mark {
+	color: red;
+}
+
+.block-definition .section-mark-greenyellow {
+	color: greenyellow;
+}
+.block-definition > li > ul > li> mark {
+	color: white;
+} 
+
+.block-definition li > .section-mark-purple {
+	color: purple;
+}
+
+.block-definition ~ p {
+	color: springgreen;
+}
+
+
+/* MAIN */
+
+.main {
+	color: aqua;
+}
+
+.container > h2 {
+	color: blue;
+}
+
+[class*="ext"] {
+	color: brown;
+}
+
+.container-section span {
+	color: chocolate;
+}
+
+.text span {
+	color: springgreen;
+}
+
+.section-two li > a {
+	color: burlywood;
+}
+
+.section-first + p {
+	color: darkblue;
+}
+
+.container-title + p {
+	color: darkorange;
+}
+
+.container-words > mark {
+	color: red;
+} 
+
+
+.span-green + mark {
+	color: black;
+}
+
+#kolobok {
+	color: darkslateblue;
+}
+
+#kolobok ~ mark {
+	color: white;
+}
