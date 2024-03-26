@@ -98,7 +98,7 @@ body {
 }
 
 .lists + p {
-	padding: 20px 0 40px;
+	margin: 40px 0; /* відбувається схлопування margin */
 }
 
 
