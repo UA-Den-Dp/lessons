@@ -79,18 +79,20 @@ body {
 }
 
 .text-item-bottom {
-	margin-bottom: 0;
+	margin-bottom: 40px; /*виправив*/
 }
 
 .sub-title-second {
 	font-size: 20px;
 	line-height: 1.40; /* 28/20 */
 	font-weight: 600;
-	margin: 40px 0 30px;
+	/* margin: 40px 0 30px; */ /*виправив*/
+	margin-bottom: 30px;
 }
 
 .lists {
 	padding-left: 47px;
+	margin-bottom: 40px;
 }
 
 .list-text {
@@ -98,7 +100,7 @@ body {
 }
 
 .lists + p {
-	margin: 40px 0; /* відбувається схлопування margin */
+	margin-bottom: 40px;
 }
 
 
@@ -123,17 +125,19 @@ body {
 }
 
 .block-items {
-	margin: 0 -15px;
-	
+	/* margin: 0 -15px; */ /*виправив*/
 }
 
 .block-item {
-	width: 300px;
+	/* width: 300px; */
+	width: 25%;  /*виправив*/
 	display: inline-block;
 	vertical-align: top;
 	text-align: center;
-	margin: 0 15px;
 	font-size: 16px;
+
+	/* margin: 0 15px; */ /*виправив*/
+	padding: 0 15px;
 }
 
 
@@ -146,5 +150,4 @@ body {
 	line-height: 1.30769231; /* 34/26 */
 	font-weight: 600;
 	margin-bottom: 20px;
-
 }
