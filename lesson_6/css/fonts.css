@@ -1,0 +1,29 @@
+@font-face {
+	font-family: 'Proxima Nova';
+	src: 
+		url("../fonts/ProximaNova-Regular.woff2"),
+		url("../fonts/ProximaNova-Regular.woff");
+	font-weight: normal;
+	font-style: normal;
+	font-display: swap;
+}
+
+@font-face {
+	font-family: 'Proxima Nova';
+	src: 
+		url("../fonts/ProximaNova-Semibold.woff2"),
+		url("../fonts/ProximaNova-Semibold.woff");
+	font-weight: 600;
+	font-style: normal;
+	font-display: swap;
+}
+
+@font-face {
+	font-family: 'Amstelvar Alpha';
+	src: 
+		url('../fonts/Amstelvar-Alpha.woff2') format('woff2'),
+		url('../fonts/Amstelvar-Alpha.woff') format('woff');
+	font-weight: normal;
+	font-style: normal;
+	font-display: swap;
+}
