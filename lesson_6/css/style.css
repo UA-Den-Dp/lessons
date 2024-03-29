@@ -41,7 +41,7 @@ body {
 }
 
 .img-living-room img {
-	max-width: 100%;
+	width: 100%;
 }
 
 .text-living-room {
@@ -120,7 +120,7 @@ body {
 .main-botton {
 	display: inline-block;
 	padding: 11.5px 20px;
-
+	
 	background: url('../img/main/graduation-cap.png') 20px 16px / 16px no-repeat;
 	background-color: #fff;
 	border-radius: 8px;
@@ -132,6 +132,7 @@ body {
 	color: #0d1216;
 	margin-left: 20px;
 }
+
 
 /*===========================*/
 /*----------FOOTER-----------*/
@@ -206,7 +207,7 @@ body {
 	background-color: #1e2832;
 }
 
-.bottom-text {
+.bottom-text-collections {
 	color: #fff;
 	text-transform: capitalize;
 	font-size: 29px;
