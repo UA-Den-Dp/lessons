@@ -1,0 +1,668 @@
+@import url("./fonts.css");
+
+@import url('https://fonts.googleapis.com/css2?family=Exo:ital,wght@0,100..900;1,100..900&display=swap');
+
+@import url('https://fonts.googleapis.com/css2?family=Orbitron:wght@400..900&display=swap');
+
+@import url("./reset.css");
+
+
+/*===========================*/
+/*----------HEADER-----------*/
+/*===========================*/
+
+header {
+	background: url('../img/header/about-section.jpg');
+	/* background-position: center; */
+	background-size: cover;
+}
+
+.container {
+	max-width: 1150px;
+	padding: 120px 0;
+	color: #fff;
+	margin: 0 auto;
+	font-size: 0;
+}
+
+.wrapper-about-me {
+	max-width: 992px;
+	margin: 0 auto;
+	text-align: center;
+}
+
+.title-about-me {
+	display: inline-block;
+	font-family: "Exo",sans-serif;
+	font-size: 60px;
+	line-height: 1.16; /* 70/60 */
+	font-weight: 700;
+	text-transform: uppercase;
+	margin-bottom: 20px;	
+}
+
+.title-about-me:after {
+	content: "";
+	display: block;
+	margin: 20px -52px 0;
+	height: 1px;
+	background: linear-gradient(90deg, rgba(255,0,0,1) 0%, rgba(66,255,0,1) 50%, rgba(36,0,255,1) 100%);
+}
+
+.title-about-me:hover {
+	text-shadow: 2px 3px 20px rgb(137, 43, 226);
+}
+
+.smile-1:hover {
+	background: url("../img/smile-about-me.png") 10px 30px / 30px no-repeat;
+}
+.smile-2:hover {
+	background: url("../img/smile-about-me.png") 20px 30px / 45px no-repeat;
+}
+.smile-3:hover {
+	background: url("../img/smile-about-me.png") 0px 0px / 45px no-repeat;
+}
+
+.text-about-me {
+	font-family: "Exo", sans-serif;
+	font-size: 18px;
+	line-height: 2.22; /* 40/18 */
+	text-align: center;
+	font-weight: 400;
+	text-transform: capitalize;
+	letter-spacing: -0.36px; /* -0.02em зробив конвертацію*/
+	margin-bottom: 60px;
+}
+
+.text-about-me:hover {
+	border-left: 1px dashed	 white;
+	border-right: 1px dashed white;
+	border-bottom: 1px dashed white;
+}
+
+.navigation {
+	margin-bottom:80px;
+}
+
+.navigation-item {
+	display: inline-block;
+	font-family: "Orbitron",sans-serif;
+	font-size: 20px;
+	font-weight: 500;
+	line-height: 1.25; /* 25/20 */
+	text-transform: capitalize;
+}
+
+.navigation-item::after {
+	content: "";
+	margin-left: 60px;
+	width: 10px;
+	height: 10px;
+	border-radius: 100%;
+	background: linear-gradient(90deg, rgba(255,0,0,1) 0%, rgba(66,255,0,1) 50%, rgba(36,0,255,1) 100%);
+}
+
+.navigation-item:not(:last-of-type) {
+	margin-right: 60px;
+}
+
+.item-link:hover {
+	text-decoration: underline;
+	text-shadow: 2px 2px 20px white;
+}
+
+.item-link:focus {
+	color: rgb(137, 43, 226);
+}
+
+.item-link:active:hover {
+	color: rgb(47, 0, 255);
+}
+
+.info-sections {
+	text-align: center;
+}
+
+.info-sections::before {
+	content: "";
+	height: 2px;
+	width: 100%;
+	background: linear-gradient(90deg, rgba(255,0,0,1) 0%, rgba(66,255,0,1) 50%, rgba(36,0,255,1) 100%);
+}
+
+.info-section {
+	display: inline-block;
+	font-family: "Exo", sans-serif;
+	font-size: 20px;
+	font-weight: 400;
+	letter-spacing: -0.4px; /* -0.02em зробив конвертацію*/
+	padding-top: 30px;
+}
+
+.info-section a {
+	margin-left: 20px; 
+}
+
+.info-section:not(:last-child) {
+	margin-right: 80px;
+}
+
+.info-section:nth-last-child(2) {
+	text-transform: capitalize;
+}
+
+.info-section:not(:nth-child(2)) {
+	text-transform: lowercase;
+}
+
+.info-section:nth-child(1)::before {
+	content: "";
+	width: 20px;
+	height: 20px;
+}
+
+.info-section:nth-child(2)::before {
+	content: "";
+	width: 20px;
+	height: 20px;
+}
+
+.info-section:nth-child(3)::before {
+	content: "";
+	width: 20px;
+	height: 20px;
+}
+
+.info-section:hover:nth-child(1)::before {
+	content: "";
+	background: url("../img/header/icon-call.png") 0 2px no-repeat;
+}
+.info-section:hover:nth-child(2)::before {
+	content: "";
+	background: url("../img/header/icon-location.png") 0 2px no-repeat;
+}
+.info-section:hover:nth-child(3)::before {
+	content: "";
+	background: url("../img/header/icon-email.png") 0 2px no-repeat;
+}
+
+.info-section a:hover {
+	text-decoration: underline;
+	overflow: hidden;
+	color: rgba(98, 114, 255, 0.877);
+}
+
+.info-section a:active{
+	color: rgb(163, 157, 255);
+	box-shadow: 0 6px 20px 0 rgba(123, 8, 255, 0.705);
+}
+
+
+/*===========================*/
+/*-----------MAIN------------*/
+/*===========================*/
+
+main {
+	background-color: #f8f8f8;
+	padding-bottom: 100px;
+}
+
+.page {
+	padding: 100px 0;
+	max-width: 1070px;
+	margin: 0 auto;
+	font-family: 'Proxima Nova', sans-serif;
+	font-size: 16px;
+	line-height: 1.875; /* 30/16 */
+	color: #2b2929;
+}
+
+.title-living-room {
+	font-size: 40px;
+	font-weight: 600;
+}
+
+.page>:not(.sub-title-living-room, :last-child) {
+	margin-bottom: 40px;
+}
+
+.img-living-room {
+	width: 100%;
+	border-radius: 5px;
+}
+
+.living-room-text p:first-child {
+	margin-bottom: 20px;
+}
+
+.sub-title-living-room {
+	font-size: 20px;
+	line-height: 1.40; /* 28/20 */
+	font-weight: 600;
+	margin-bottom: 30px;
+}
+
+.lists-living-room li{
+	padding-left: 47px;
+}
+
+.lists-living-room li::before {
+	content: "";
+	display: inline-block;
+	vertical-align: middle;
+	width: 32px;
+	height: 32px;
+	margin-left: -47px;
+	margin-right: 10px;
+	background: url("../img/main/list-icon.svg") 0 0  / 100% no-repeat;
+}
+
+.lists-living-room li:not(:last-child) {
+	margin-bottom: 20px;
+}
+
+/*===========================*/
+/*----------GAME-----------*/
+/*===========================*/
+
+.game-wrapper {
+	width: 900px;
+	margin: 0 auto;
+	padding: 0 0 120px;
+}
+
+.game-start-text {
+	display: inline-block;
+	padding: 10px 20px;
+	background-color: rgb(132, 0, 255);
+	margin-bottom: 20px;
+	border-radius: 20px;
+	box-shadow: 0 5px 10px black;
+	color: rgb(255, 207, 245);
+}
+
+.game {
+	display: none;
+}
+
+.game:target {
+display: block;
+}
+
+.game-start-text:hover {
+	background-color: rgba(255, 0, 157, 0.514);
+	box-shadow: 0 5px 10px rgb(255, 70, 70);
+	color: black;
+}
+
+.game {
+	height: 605px;
+	/* width: 900px; */
+	/* margin: 0 auto; */
+	background: url("../img/main/background.jpg") 0 0 / 100% no-repeat;
+	font-size: 0;
+}
+
+.game-line {
+	width: 50px;
+	height: 50px;
+	background-color: rgba(255, 0, 179, 0.774);
+}
+
+.game-line-2 {
+	visibility: hidden;
+}
+
+.game-line-1:hover + .game-line-2,
+.game-line-2:hover {
+	width: 475px;
+	visibility: visible;
+}
+
+.game-line-3 {
+	visibility: hidden;
+	height: 150px;
+	margin: 0 auto;
+}
+
+.game-line-2:hover + .game-line-3,
+.game-line-3:hover {
+	visibility: visible;
+}
+
+.game-line-4 {
+	visibility: hidden;
+	margin-left: 425px;
+}
+
+.game-line-3:hover + .game-line-4,
+.game-line-4:hover{
+	width: 475px;
+	visibility: visible;
+}
+
+.game-line-5 {
+	visibility: hidden;
+	margin-left: 880px;
+	height: 150px;
+}
+
+.game-line-4:hover + .game-line-5,
+.game-line-5:hover{
+	height: 150px;
+	width: 20px;
+	visibility: visible;
+	background-color: rgba(255, 0, 0, 0.89);
+} 
+
+.game-line-6 {
+	visibility: hidden;
+	height: 15px;
+}
+
+.game-line-5:hover + .game-line-6,
+.game-line-6:hover {
+	width: 900px;
+	margin-left: auto;
+	visibility: visible;
+	background-color: rgba(255, 0, 0, 0.89);
+}
+
+.game-line-7 {
+	visibility: hidden;
+	height: 130px;
+	/* width: 130px; */
+}
+
+.game-line-6:hover + .game-line-7,
+.game-line-7:hover {
+	height: 130px;
+	width: 15px;
+	visibility: visible;
+	background-color: rgba(255, 0, 0, 0.89);
+}
+
+.game-line-8 {
+	visibility: hidden;
+	height: 10px;
+	display: inline-block;
+}
+
+.game-line-7:hover + .game-line-8,
+.game-line-8:hover {
+	width: 200px;
+	visibility: visible;
+	background-color: rgba(255, 0, 0, 0.89);
+}
+
+.game-text {
+	visibility: hidden;
+	width: 10px;
+	height: 10px;
+	background-color: chartreuse;
+	display: inline-block;
+}
+
+.game-line-8:hover + .game-text,
+.game-text:hover {
+	visibility: visible;
+}
+
+.game-text:hover {
+	height: 500px;
+	width: 500px;
+	background: url("../img/cellotape-scotch.gif") 0 0 / 100% no-repeat;
+}
+
+
+/*===========================*/
+/*----------FOOTER-----------*/
+/*===========================*/
+
+			/*!==========================*/
+			/*!--------experiment--------*/
+			/*!==========================*/
+.experiments {
+	max-width: 1250px;
+	margin: 0 auto;
+	font-size: 0;
+	/* padding: 100px 0; */
+}
+
+.lists,
+.lists-2 {
+	font-family: 'Proxima Nova', sans-serif;
+	font-size: 18px;
+	font-weight: 600;
+	max-width: 600px;
+	vertical-align: top;
+	display: inline-block;
+}
+
+.experiment-1 .lists:first-of-type{
+	margin-bottom: 40px;
+}
+
+.list {
+	padding: 15px;
+}
+
+/*?======================================*/
+/*TODO===:first-child====================*/
+/*TODO===:first-of-type==================*/
+/*TODO===:last-child=====================*/
+/*TODO===:last-of-type===================*/
+/*TODO===:nth-child()====================*/
+/*TODO===:not-===========================*/
+/*TODO===:has============================*/
+/*TODO===.class > *:=====================*/
+/*?======================================*/
+
+
+.lists:first-child {
+	margin-right: 50px;
+}
+
+.lists .list:first-child {
+	color: red;
+}
+
+.list a:first-of-type {
+	color: blue;
+	font-style: italic;
+}
+
+.lists .list:last-child {
+	background-color: beige;
+}
+
+.list span:last-of-type {
+	text-transform: uppercase;
+	text-shadow: 3px 5px 8px rgb(236, 0, 0);
+}
+
+.lists .list:nth-child(3) {
+	background-color: rgba(199, 209, 59, 0.541);
+	text-indent: 15%;
+}
+
+.lists .list:nth-child(5),
+.lists .list:nth-child(7) {
+	color: chartreuse;
+	border: 2px double rgb(245, 0, 204);
+}
+
+.lists .list:nth-child(odd) {
+	box-shadow: 10px 5px 10px 4px rgb(0, 255, 234);
+}
+
+.lists .list:nth-child(even) {
+	outline: 10px outset rgb(0, 47, 255);
+}
+
+
+.list-2:nth-child(3n+1) {
+	border-right: 5px dotted gold;
+	box-shadow: 5px 5px 10px 5px thistle;
+}
+
+.list-2:not(:nth-child(odd)) {
+	font-family: 'Amstelvar Alpha';
+	font-style: italic;
+}
+
+.list-2:not(:last-of-type) {
+	margin-bottom: 20px;
+}
+
+.list-2:has(>mark) {
+	background-color: brown;
+}
+
+mark:has(>.mark-span) {
+	background-color: bisque;
+}
+
+.lists-2 > *:last-child {
+	text-decoration: line-through;
+}
+
+
+/*?=========================*/
+/*TODO===:hover=============*/
+/*TODO===:active============*/
+/*TODO===:focus=============*/
+/*TODO===:focus-visib=======*/
+/*TODO===:target============*/
+/*?=========================*/
+
+
+.list:hover {
+	padding-bottom: 20px;
+	background-color: rgba(70, 143, 207, 0.192);
+}
+
+.list-2:hover {
+	text-shadow: 2px 2px 15px rgb(1, 255, 14);
+}
+
+.hover:hover {
+	opacity: 1;
+	color: rgb(255, 0, 212);
+	padding-left: 40px;
+}
+
+.lists-2:active {
+	text-shadow: -10px -10px 5px purple;
+}
+
+.show,
+.experiment-link {
+	color: yellow;
+	padding: 15px;
+	font-size: 20px;
+	background-color: black;
+	border-radius: 20px;
+	border: 2px solid yellow;
+	width: 120px;
+	text-align: center;
+}
+
+.show:hover {
+	box-shadow: 20px 20px 30px blue;
+}
+ 
+.experiment-link:hover {
+	box-shadow: 20px 20px 30px rgb(255, 115, 0);
+}
+
+.experiment-link:focus {
+	background-color: blue;
+	box-shadow: 20px 20px 30px rgb(255, 115, 0);
+}
+.experiment-link:focus-visible {
+	border-radius: 50px;
+}
+
+.experiment-1 {
+	display: none;
+}
+
+.experiment-1:target {
+display: block;
+}
+
+/*?======================*/
+/*TODO===::after=========*/
+/*TODO===::before========*/
+/*?======================*/
+
+.befor-after {
+	margin: 0 auto;
+	width: 400px;
+	font-size: 0;
+}
+.test-before,
+.test-after {
+	width: 160px;
+	background-color: black;
+	color: blue;
+	font-size: 30px;
+	text-align: center;
+	padding: 12px 20px;
+}
+
+.test-before {
+	border-radius: 15% 85% 50% 50% / 15% 50% 50% 85%;
+	margin-right: 40px;
+}
+
+.test-before:active {
+	font-size: 29px;
+	opacity: 0.7;
+}
+
+.test-before:hover {
+	box-shadow: 15px 15px 20px black,
+	inset -5px -3px 10px rgba(0, 0, 0, 0.712);
+	text-shadow: 4px 4px 8px rgb(25, 0, 255);
+	color: yellow;
+	background: rgba(0, 0, 0, 0.253)
+}
+
+.test-before:hover::before {
+	content: "";
+	width: 40px;
+	height: 40px;
+	margin-left: -5px;
+	vertical-align: middle;
+	background:  url("../img/footer/experiment/icon-before.png") 0 0 / 100% no-repeat;
+	
+}
+
+.test-after:active {
+	font-size: 29px;
+	opacity: 0.7;
+}
+
+.test-after {
+	border-radius: 85% 15% 50% 50% / 50% 15% 85% 50% ;
+}
+
+.test-after:hover {
+	box-shadow: -15px 15px 20px black,
+	inset -5px -3px 10px rgba(0, 0, 0, 0.712);
+	text-shadow: 4px 4px 8px rgb(25, 0, 255);
+	color: yellow;
+
+	background: rgba(0, 0, 0, 0.253)
+}
+
+.test-after:hover::after {
+	content: "";
+	width: 40px;
+	height: 40px;
+	vertical-align: middle;
+	background:  url("../img/footer/experiment/icon-after.png") 0 0 / 100% no-repeat;
+}
+
