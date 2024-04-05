@@ -1,0 +1,110 @@
+@import url("./reset.css");
+
+
+/*===========================*/
+/*----------HEADER-----------*/
+/*===========================*/
+
+body {
+	max-width: 1000px;
+	margin: 0 auto;
+	background: linear-gradient(90deg, rgba(255,251,217,1) 0%, rgba(254,255,0,1) 50%, rgba(255,251,217,1) 100%);
+}
+
+.header {
+	padding-top: 30px;
+	margin-bottom: 30px;
+}
+
+.title {
+	padding: 20px;
+	font-size: 30px;
+	font-weight: 600;
+	line-height: 1.33	; /* 40/30 */
+	text-align: center;
+	border-radius: 50%;
+	background-color: rgba(255, 72, 0, 0.2);
+	box-shadow: 
+		inset 1px 1px 15px 10px rgba(255, 255, 255, 0.5),
+		1px 1px 25px 20px rgba(255, 255, 255, 0.3);
+	text-shadow: 3px 3px 5px white;
+}
+
+
+/*===========================*/
+/*-----------MAIN------------*/
+/*===========================*/
+.page {
+	margin-bottom: 30px;
+	border: 4px solid rgba(255, 255, 255, 0.4);
+	border-radius: 30px;
+	padding: 20px;
+	box-shadow: 
+		inset 0 0 30px 10px rgba(255, 255, 255, 0.5),
+		2px 2px 25px 20px rgba(255, 255, 255, 0.3);
+	color: darkgreen;
+	font-size: 30px;
+	text-shadow: 3px 5px 8px rgb(0, 183, 255);
+}
+
+.page img{
+	vertical-align: middle;
+	margin-right: 15px;
+}
+
+[src*=".png"], [src*=".webp"] {
+	width: 500px;
+}
+
+.page p:not(:last-of-type) {
+	margin-bottom: 15px;
+}
+
+.page p:not(:has( img)) {	
+	padding-left: 50px;
+	min-height: 35px;
+	color: rgb(0, 119, 255);
+}
+
+.page p:nth-of-type(10) {
+	background: url("../img/icon-svg-background-01.svg") 0 -3px  no-repeat;
+}
+
+.page p:nth-of-type(11) {
+	background: url("../img/icon-svg-background-02.svg") 8px 7px no-repeat;
+}
+
+.page p:nth-of-type(12) {
+	background: url("../img/icon-svg-background-03.svg") 8px 7px no-repeat;
+}
+
+/*===========================*/
+/*----------FOOTER-----------*/
+/*===========================*/
+
+
+footer {
+	border: 4px solid rgba(255, 140, 236, 0.4);
+	border-radius: 30px;
+	padding: 20px;
+	box-shadow: 
+		inset 0 0 30px 10px rgba(255, 140, 236, 0.4),
+		2px 2px 25px 20px rgba(255, 140, 236, 0.4);
+	color: rgb(37, 0, 204);
+	font-size: 30px;
+	text-shadow: 3px 5px 8px rgba(247, 0, 255, 0.726);
+}
+
+footer p:not(:last-of-type) {
+	margin-bottom: 15px;
+}
+
+footer img{ 
+	vertical-align: middle;
+	margin-right: 20px;
+}
+
+.picture p {
+	display: inline-block;
+	max-width: 420px;
+}
