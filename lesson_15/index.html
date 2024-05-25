@@ -1,0 +1,187 @@
+<!DOCTYPE html>
+<html lang="uk">
+
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Lesson 15</title>
+	<link rel="stylesheet" href="./css/style.css">
+	<link rel="shortcut icon" href="./img/favicon.png" type="image/x-icon">
+</head>
+
+<body>
+	<div class="wrapper">
+		<header class="header">
+			<div class="header__top top-header">
+				<div class="top-header__container">
+					<div class="top-header__menu menu">
+						<ul class="menu__list">
+							<li class="menu__item">
+								<a href="#" class="menu__link">Про нас</a>
+							</li>
+							<li class="menu__item">
+								<a href="#" class="menu__link">Оплата</a>
+							</li>
+							<li class="menu__item">
+								<a href="#" class="menu__link">Доставка та збірка</a>
+							</li>
+							<li class="menu__item">
+								<a href="#" class="menu__link">Відгуки</a>
+							</li>
+							<li class="menu__item">
+								<a href="#" class="menu__link">Блог</a>
+							</li>
+							<li class="menu__item">
+								<a href="#" class="menu__link">Контакти</a>
+							</li>
+						</ul>
+					</div>
+
+					<div class="top-header__menu-button button-menu">
+						<button class="button-menu__item" type="button">
+							<img src="./img/icon/burger.svg" alt="icon">
+						</button>
+					</div>
+
+					<div class="logo logo--dsl-none">
+						<a class="logo__link" href="#">
+							<img class="logo__image" src="./img/logo-header.svg" alt="logo">
+						</a>
+					</div>
+
+					<div class="top-header__consultation consultation">
+						<span>Допомога і консультація:</span>
+						<div class="consultation__messengers">
+							<a href="#" class="consultation__link">
+								<img src="./img/content-icon/whatsapp.svg" alt="whatsapp">
+							</a>
+							<a href="#" class="consultation__link">
+								<img src="./img/content-icon/telegram.svg" alt="">
+							</a>
+							<a href="#" class="consultation__link">
+								<img src="./img/content-icon/viber.svg" alt="viber">
+							</a>
+						</div>
+					</div>
+
+					<!-- <div class="top-header__language language">
+						<a href="#" class="language__link">UA</a>
+					</div> -->
+
+					<form class="top-header__language language" action="#">
+						<select class="language__items" name="form[language]">
+							<option class="asd" value="ua">UA</option>
+							<option value="en">EN</option>
+							<option value="de">DE</option>
+						</select>
+					</form>
+
+				</div>
+			</div>
+			<div class="header__middle middle-header">
+				<div class="middle-header__container">
+					<div class="middle-header__logo logo">
+						<a class="logo__link" href="#">
+							<img class="logo__image" src="./img/logo-header.svg" alt="logo">
+						</a>
+					</div>
+					<button class="middle-header__button button" type="button">
+						<span>Каталог</span>
+					</button>
+					<!-- <div class="middle-header__search search">
+						<span>Пошук товарів</span>
+					</div> -->
+					<form class="search" action="#">
+						<input placeholder="Пошук товарів" type="search" class="search__input">
+						<button class="search__button" type="submit"></button>
+					</form>
+
+					<div class="middle-header__contacts contacts">
+						<img class="contacts__icon" src="./img/icon/icon-tel.svg" alt="icon">
+						<div class="contacts__section">
+							<span>Щодня з 9:00 до 18:00</span>
+							<a class="contacts__link" href="tel:0679294545">
+								067 929-45-45
+							</a>
+						</div>
+						<img class="contacts__icon" src="./img/icon/arrow.svg" alt="icon">
+					</div>
+					<div class="middle-header__favs-cart favs-cart">
+						<button class="favs-cart__search" type="button">
+							<img src="./img/icon/search-2.svg" alt="icon-search">
+						</button>
+						<a class="favs-cart__favs" href="#">
+							<img src="./img/icon/favs-icon.svg" alt="favorites">
+						</a>
+						<a class="favs-cart__cart" href="#">
+							<img src="./img/icon/cart-icon.svg" alt="shopping cart">
+						</a>
+					</div>
+				</div>
+			</div>
+			<div class="header__bottom bottom">
+				<div class="bottom__container">
+					<ul class="financepromo">
+						<li class="financepromo__item">
+							<a href="#" class="financepromo__link">
+								<img class="financepromo__image" src="./img/content-icon/promotion-icon.svg" alt="іконка-Акції">
+								Акції
+							</a>
+						</li>
+						<li class="financepromo__item">
+							<a href="#" class="financepromo__link">
+								<img class="financepromo__image" src="./img/content-icon/sale.svg" alt="іконка-Акції">
+								Розпродаж
+							</a>
+						</li>
+						<li class="financepromo__item">
+							<a href="#" class="financepromo__link">
+								<img class="financepromo__image" src="./img/content-icon/credit.svg" alt="іконка-Акції">
+								Купити в кредит
+							</a>
+						</li>
+					</ul>
+					<ul class="rooms-zones">
+						<li class="rooms-zones__item">
+							<a href="#" class="rooms-zones__link">Дитяча</a>
+						</li>
+						<li class="rooms-zones__item">
+							<a href="#" class="rooms-zones__link">Кухня</a>
+						</li>
+						<li class="rooms-zones__item">
+							<a href="#" class="rooms-zones__link">Ванна</a>
+						</li>
+						<li class="rooms-zones__item">
+							<a href="#" class="rooms-zones__link">Спальня</a>
+						</li>
+						<li class="rooms-zones__item">
+							<a href="#" class="rooms-zones__link">Передпокій</a>
+						</li>
+						<li class="rooms-zones__item">
+							<a href="#" class="rooms-zones__link">Вітальня</a>
+						</li>
+						<li class="rooms-zones__item">
+							<a href="#" class="rooms-zones__link">Офіс</a>
+						</li>
+					</ul>
+				</div>
+			</div>
+		</header>
+
+		<main class="page">
+		</main>
+
+		<footer class="footer">
+			<div class="footer__container">
+				<!-- <form class="form-test" action="#">
+					<input placeholder="Я footer" autocomplete="off" id="input-test" class="form-test__input" name="form[test]"
+						type="text">
+				</form> -->
+				<p>FOOTER</p>
+			</div>
+
+		</footer>
+	</div>
+</body>
+
+</html>
