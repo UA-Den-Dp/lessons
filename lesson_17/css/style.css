@@ -65,7 +65,7 @@ body {
 }
 
 @media (any-hover: hover) {
-  .popular-products__link:hover {
+  .title-wrap__link:hover {
     text-decoration: underline;
   }
 }
