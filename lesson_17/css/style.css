@@ -161,6 +161,7 @@ body {
 }
 .card-products__cost {
   display: flex;
+  flex-wrap: wrap;
   align-items: center;
   gap: 10px;
 }
