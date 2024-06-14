@@ -137,8 +137,10 @@ body {
   line-height: 1.26; /* 24/19 */
   transition: all 0.2s;
   display: flex;
-  flex-direction: column;
-  justify-content: center;
+  justify-content: start;
+  align-items: center;
+/*   flex-direction: column;
+  justify-content: center; */
   flex-grow: 1;
 }
 
