@@ -322,6 +322,9 @@ body {
 }
 
 @media (min-width: 1199.98px) {
+  .style-dress__container {
+    padding: 70px 64px 76px;
+  }
   .top-section-dress--margin-bottom {
     margin-bottom: 64px;
   }
