@@ -56,10 +56,12 @@ body {
   margin-bottom: 40px;
 }
 .title-wrap__title {
-  /* font-size: 40px; */
   font-weight: 600;
   line-height: 1.2; /* 48/40 */
-  font-size: calc(32px + (40 - 32) * ((100vw - 320px) / (1240 - 320)));
+  font-size: min(
+    max(32px, calc(32px + (40 - 32) * ((100vw - 320px) / (1240 - 320)))),
+    40px
+  );
 }
 .title-wrap__link {
   font-size: 19px;
@@ -86,23 +88,9 @@ body {
 /* =================================================== */
 .card-products__list {
   display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  grid-template-columns: repeat(auto-fit, minmax(255px, 1fr));
   gap: 24px 10px;
 }
-
-/* 
-№2 - Потрібно адаптувати це під 290 пікселів або, як на якомусь етапі, встановити 1fr. Оскільки ми робимо адаптацію під роздільну здатність 320 пікселів, у нас з боків ідуть відступи по 15 пікселів.
-
-15 + 15 = 30.
-320 - 30 = 290.
-у вас зараз праворуч контент не влазить, як ви можете помітити.
- */
-@media (max-width: 375px) {
-  .card-products__list {
-    grid-template-columns: repeat(auto-fit, minmax(290px, 1fr));
-  }
-}
-/* =================================================== */
 .card-products__item {
   background-color: #fff;
   border-radius: 8px;
@@ -123,16 +111,19 @@ body {
 .card-products__image {
   border-radius: 8px;
   overflow: hidden;
+  aspect-ratio: 260 / 220;
 }
 
-.card-products__image img {
+.card-products__image picture > img {
   width: 100%;
+  height: 100%;
+  object-fit: cover;
   transition: transform 0.3s;
 }
 
 @media (any-hover: hover) {
   .card-products__image img:hover {
-    transform: scale(1.2);
+    transform: scale(1.06);
   }
 }
 
@@ -227,6 +218,17 @@ body {
   transition: background-color 0.3s;
 }
 
+.icons-card-products__link img {
+  width: 25px;
+  height: 25px;
+  object-fit: contain;
+}
+.icons-card-products__link svg {
+  width: 25px;
+  height: 25px;
+  object-fit: contain;
+}
+
 .icons-card-products__link--favorites > svg > path,
 .icons-card-products__link--basket > svg > path {
   transition: fill 0.3s;
@@ -257,25 +259,41 @@ body {
   background-color: #f0f0f0;
   border-radius: 40px;
   /* padding: 70px 64px 76px; */
-  padding-top: calc(35px + (70 - 35) * ((100vw - 320px) / (1240 - 320)));
-  padding-right: calc(32px + (64 - 32) * ((100vw - 320px) / (1240 - 320)));
-  padding-bottom: calc(38px + (76 - 38) * ((100vw - 320px) / (1240 - 320)));
-  padding-left: calc(32px + (64 - 32) * ((100vw - 320px) / (1240 - 320)));
+  padding-top: min(
+    max(40px, calc(40px + (70 - 40) * ((100vw - 320px) / (1240 - 320)))),
+    70px
+  );
+  padding-left: min(
+    max(24px, calc(24px + (64 - 24) * ((100vw - 320px) / (1240 - 320)))),
+    64px
+  );
+  padding-right: min(
+    max(24px, calc(24px + (64 - 24) * ((100vw - 320px) / (1240 - 320)))),
+    64px
+  );
+  padding-bottom: min(
+    max(27px, calc(27px + (76 - 27) * ((100vw - 320px) / (1240 - 320)))),
+    76px
+  );
 }
 .style-dress__top-section {
 }
 .top-section-dress {
 }
 .top-section-dress--margin-bottom {
-  margin-bottom: calc(34px + (64 - 34) * ((100vw - 320px) / (1240 - 320)));
+  margin-bottom: min(
+    max(28px, calc(28px + (64 - 28) * ((100vw - 320px) / (1240 - 320)))),
+    64px
+  );
 }
 .top-section-dress__title {
   font-family: "IntegralCF", sans-serif;
   color: #000;
-  /* font-size: 48px; */
-  font-size: calc(25px + (48 - 25) * ((100vw - 320px) / (1240 - 320)));
+  font-size: min(
+    max(32px, calc(32px + (48 - 32) * ((100vw - 320px) / (1240 - 320)))),
+    48px
+  );
   text-align: center;
-  /* padding-bottom: 64px; */
 }
 .top-section-dress__title:not(:last-child) {
   margin-bottom: 20px;
@@ -283,7 +301,10 @@ body {
 
 .style-dress__cards {
   display: grid;
-  gap: 20px;
+  gap: min(
+    max(16px, calc(16px + (20 - 16) * ((100vw - 320px) / (1240 - 320)))),
+    20px
+  );
 }
 .style-dress__card {
   border-radius: 20px;
@@ -295,20 +316,29 @@ body {
   width: 100%;
   height: 100%;
   object-fit: cover;
-  aspect-ratio: 1 / 1;
+  /* aspect-ratio: 1 / 1; */
   border-radius: 20px;
 }
 .style-dress__sub-title {
+  transition: all 0.2s;
   font-family: "Satoshi", sans-serif;
   color: #000;
   /* font-size: 36px; */
-  font-size: calc(18px + (36 - 18) * ((100vw - 320px) / (1240 - 320)));
+  font-size: min(
+    max(24px, calc(24px + (36 - 24) * ((100vw - 320px) / (1240 - 320)))),
+    36px
+  );
   font-weight: 700;
   position: absolute;
-  /* top: 25px;
-  left: 36px; */
-  top: calc(18px + (25 - 18) * ((100vw - 320px) / (1240 - 320)));
-  left: calc(25px + (36 - 25) * ((100vw - 320px) / (1240 - 320)));
+
+  top: min(
+    max(16px, calc(16px + (25 - 16) * ((100vw - 320px) / (1240 - 320)))),
+    25px
+  );
+  left: min(
+    max(24px, calc(24px + (36 - 24) * ((100vw - 320px) / (1240 - 320)))),
+    36px
+  );
 }
 @media (any-hover: hover) {
   .style-dress__card:hover {
@@ -321,25 +351,9 @@ body {
   }
 }
 
-@media (min-width: 1199.98px) {
-  .style-dress__container {
-    padding: 70px 64px 76px;
-  }
-  .top-section-dress--margin-bottom {
-    margin-bottom: 64px;
-  }
-  .top-section-dress__title {
-    font-size: 48px;
-  }
-  .style-dress__sub-title {
-    font-size: 36px;
-    top: 25px;
-    left: 36px;
-  }
-}
-
 @media (min-width: 991.98px) {
   .style-dress__cards {
+    /* grid-template-columns: minmax(150px, 407px) auto minmax(150px, 407px); */
     grid-template-columns: minmax(150px, 407px) auto minmax(150px, 407px);
     grid-auto-rows: 289px;
   }
@@ -349,9 +363,13 @@ body {
     grid-column: span 2;
   }
 }
-
 @media (min-width: 580.98px) and (max-width: 991.98px) {
   .style-dress__cards {
-    grid-template-columns: minmax(150px, 407px) minmax(150px, 407px);
+    grid-template-columns: 1fr 1fr;
+  }
+}
+@media (min-width: 320px) and (max-width: 580.98px) {
+  .style-dress__cards {
+    grid-auto-rows: 190px;
   }
 }
